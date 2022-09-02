@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'centaur';
+  src: url('./fonts/CENTAUR.TTF');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'centaur';
 }
 
 img {
@@ -19,7 +24,7 @@ img {
 }
 
 .search {
-  background-color: beige;
+  background-color: #50c7f4;
   z-index: 10;
 }
 
@@ -38,36 +43,34 @@ img {
 
   position: relative;
   background-color: #fff;
-  border-radius: 30px;
-  border: 3px solid rgb(255, 201, 134);
+  border: 1px solid rgba(0, 0, 0, 1);
 }
 
 .search-input {
   width: 100%;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   border: none;
   outline: none;
   padding: 1rem;
-  border-radius: 30px;
+  font-family: 'centaur';
 }
 
 .search-btn {
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
   text-transform: capitalize;
   cursor: pointer;
   height: 100%;
   padding: 0 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'centaur';
   border: none;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   position: absolute;
   right: 0;
   top: 0;
 }
 
 .suggestions-container {
-  background: beige;
   height: 0px;
   overflow: hidden;
 
@@ -79,11 +82,11 @@ img {
 }
 
 .suggestions-title {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aaa;
+  color: #fff;
   text-align: center;
   margin: 2rem;
 }
@@ -103,7 +106,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   color: #fefefe;
 
